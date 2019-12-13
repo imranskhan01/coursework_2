@@ -4,7 +4,7 @@ pipline
 		stages
 		{
 			stage('Build image') {app = docker.build("ikhan206/coursework2")}
-			stage('Push image') {docker.withRegistry('https://hub.docker.com', 'docker-hub-credentials>
+			stage('Push image') {docker.withRegistry('https://hub.docker.com', 'docker-hub-credentials')
 			app.push("latest")}
 
 			stage('Sonarqube')
