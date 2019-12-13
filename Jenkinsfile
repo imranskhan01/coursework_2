@@ -11,7 +11,7 @@ pipline
 			{
 			  enviroment{ scanner home = tool 'Sonarqube'}
 					  Steps
-					  7{
+					  {
 							withSonarQubeEnv('Sonarqube'){sh "${scannerHome}/bin/sonar-scanner>
 
 							timeout(time: 10, unit: 'MINUTES') 
