@@ -12,7 +12,7 @@ pipline
 			  enviroment{ scanner home = tool 'Sonarqube'}
 					  Steps
 					  {
-							withSonarQubeEnv('Sonarqube'){sh "${scannerHome}/bin/sonar-scanner>
+							withSonarQubeEnv('Sonarqube'){sh "${scannerHome}/bin/sonar-scanner"
 
 							timeout(time: 10, unit: 'MINUTES') 
 							{
